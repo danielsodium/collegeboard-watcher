@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Collegeboard Watcher</title>
+  <meta name="author" content="Daniel Na">
+
+  <link rel="stylesheet" href="./skeleton.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./process.js"></script>
+
+</head>
+
+<body>
+    <div style="padding:40px;">
+        <h2>CollegeBoard Video Watcher</h2>
+        <a onclick="openvid()">Instructional video</a>
+
+        <p>Authorization</p>
+        <textarea id="auth" name="auth" rows="2" cols="70"></textarea>
+        <p>Request Payload</p>
+        <textarea id="payload" name="payload" rows="20" cols="70"></textarea>
+        <br/>
+        <button onclick="sendReq()">Watch It!</button>
+        <br />
+        <p id="end"></p>
+        <p id="end-two"></p>
+    </div>
+    
+</body>
+</html>
